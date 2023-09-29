@@ -18,6 +18,7 @@ struct ContentView: View {
                 print("Ui!")
             } label: {
                 Text("Entrar")
+                    .font(.custom("Poppins", size: 20))
                     .foregroundColor(Color.black)
                     .frame(width: 200, height: 50)
                     .background(Color.yellow)
