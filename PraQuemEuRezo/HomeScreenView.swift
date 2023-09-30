@@ -26,7 +26,7 @@ struct HomeScreenView: View {
                         .cornerRadius(10)
                         .shadow(radius: 5)
                 }
-            }.padding(.bottom, 60)
+            }.padding(.bottom, 150)
         }.ignoresSafeArea(.all)
     }
 }

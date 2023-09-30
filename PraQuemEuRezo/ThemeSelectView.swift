@@ -8,31 +8,36 @@
 import SwiftUI
 
 struct ThemeSelectView: View {
+    
     var model = Model()
+    
     var body: some View {
+        
         VStack(spacing: 20) {
-            VStack(alignment: .leading, spacing: 2) {
+            
+            VStack(spacing: 10) {
                 Text("Não temas! O divino está à uma prece de distância.")
                     .font(.caption)
                 Text("Sobre que tema você precisa de ajuda?")
                     .bold()
                     .font(.title)
-            }
+            } .multilineTextAlignment(.center)
             
-            VStack(alignment: .leading, spacing: 10) {
-                Text("Selecione um tema da lista para encontrar quem pode te ajudar:")
-                    .font(.callout)
+            VStack {
                 List(model.themesArray, id: \.self){ theme in
                     Text(theme)
-                }.listStyle(.automatic)
-            }
-        } .multilineTextAlignment(.leading)
-        .padding(10)
+                }.listStyle(.plain)
+            } .multilineTextAlignment(.center)
+            
+        } .padding([.leading, .trailing],10)
+            .padding(.top, 50)
+            .navigationBarHidden(true)
+        
     }
-}
-
-struct ThemeSelectView_Previews: PreviewProvider {
-    static var previews: some View {
-        ThemeSelectView()
+    
+    struct ThemeSelectView_Previews: PreviewProvider {
+        static var previews: some View {
+            ThemeSelectView()
+        }
     }
 }
