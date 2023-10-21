@@ -7,24 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		56049DCA2AC7195C0019A00D /* ThemeSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56049DC92AC7195C0019A00D /* ThemeSelectView.swift */; };
-		56049DCC2AC71DB20019A00D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56049DCB2AC71DB20019A00D /* Model.swift */; };
+		56049DCC2AC71DB20019A00D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56049DCB2AC71DB20019A00D /* Theme.swift */; };
 		56049DCE2AC724760019A00D /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56049DCD2AC724760019A00D /* HomeScreenView.swift */; };
 		566EA5E72AC5D61100688D08 /* PraQuemEuRezoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566EA5E62AC5D61100688D08 /* PraQuemEuRezoApp.swift */; };
 		566EA5E92AC5D61100688D08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566EA5E82AC5D61100688D08 /* ContentView.swift */; };
 		566EA5EB2AC5D61300688D08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566EA5EA2AC5D61300688D08 /* Assets.xcassets */; };
 		566EA5EE2AC5D61300688D08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566EA5ED2AC5D61300688D08 /* Preview Assets.xcassets */; };
+		56A74CA62AE36FC4007E0904 /* DefaultButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A74CA52AE36FC4007E0904 /* DefaultButtonView.swift */; };
+		56BFA4732AE3624600AEA8A1 /* DataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BFA4722AE3624600AEA8A1 /* DataSourceMock.swift */; };
+		56BFA4752AE3662C00AEA8A1 /* ThemeSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BFA4742AE3662C00AEA8A1 /* ThemeSelectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		56049DC92AC7195C0019A00D /* ThemeSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSelectView.swift; sourceTree = "<group>"; };
-		56049DCB2AC71DB20019A00D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		56049DCB2AC71DB20019A00D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		56049DCD2AC724760019A00D /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		566EA5E32AC5D61100688D08 /* PraQuemEuRezo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PraQuemEuRezo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		566EA5E62AC5D61100688D08 /* PraQuemEuRezoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraQuemEuRezoApp.swift; sourceTree = "<group>"; };
 		566EA5E82AC5D61100688D08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		566EA5EA2AC5D61300688D08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		566EA5ED2AC5D61300688D08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		56A74CA52AE36FC4007E0904 /* DefaultButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonView.swift; sourceTree = "<group>"; };
+		56BFA4722AE3624600AEA8A1 /* DataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceMock.swift; sourceTree = "<group>"; };
+		56BFA4742AE3662C00AEA8A1 /* ThemeSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSelectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +61,10 @@
 		566EA5E52AC5D61100688D08 /* PraQuemEuRezo */ = {
 			isa = PBXGroup;
 			children = (
-				566EA5E62AC5D61100688D08 /* PraQuemEuRezoApp.swift */,
-				566EA5E82AC5D61100688D08 /* ContentView.swift */,
-				56049DCD2AC724760019A00D /* HomeScreenView.swift */,
-				56049DC92AC7195C0019A00D /* ThemeSelectView.swift */,
-				56049DCB2AC71DB20019A00D /* Model.swift */,
+				56BFA46D2AE3611900AEA8A1 /* App */,
+				56BFA46E2AE3619300AEA8A1 /* HomeScreenView */,
+				56BFA46F2AE361BC00AEA8A1 /* ThemeSelectView */,
+				56BFA4702AE361D300AEA8A1 /* Models */,
 				566EA5EA2AC5D61300688D08 /* Assets.xcassets */,
 				566EA5EC2AC5D61300688D08 /* Preview Content */,
 			);
@@ -74,6 +77,49 @@
 				566EA5ED2AC5D61300688D08 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		56A74CA42AE36F93007E0904 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56A74CA52AE36FC4007E0904 /* DefaultButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56BFA46D2AE3611900AEA8A1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				566EA5E62AC5D61100688D08 /* PraQuemEuRezoApp.swift */,
+				566EA5E82AC5D61100688D08 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		56BFA46E2AE3619300AEA8A1 /* HomeScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				56049DCD2AC724760019A00D /* HomeScreenView.swift */,
+			);
+			path = HomeScreenView;
+			sourceTree = "<group>";
+		};
+		56BFA46F2AE361BC00AEA8A1 /* ThemeSelectView */ = {
+			isa = PBXGroup;
+			children = (
+				56BFA4742AE3662C00AEA8A1 /* ThemeSelectView.swift */,
+			);
+			path = ThemeSelectView;
+			sourceTree = "<group>";
+		};
+		56BFA4702AE361D300AEA8A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56A74CA42AE36F93007E0904 /* Views */,
+				56BFA4722AE3624600AEA8A1 /* DataSourceMock.swift */,
+				56049DCB2AC71DB20019A00D /* Theme.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,11 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56049DCA2AC7195C0019A00D /* ThemeSelectView.swift in Sources */,
+				56BFA4752AE3662C00AEA8A1 /* ThemeSelectView.swift in Sources */,
 				566EA5E92AC5D61100688D08 /* ContentView.swift in Sources */,
+				56BFA4732AE3624600AEA8A1 /* DataSourceMock.swift in Sources */,
 				56049DCE2AC724760019A00D /* HomeScreenView.swift in Sources */,
 				566EA5E72AC5D61100688D08 /* PraQuemEuRezoApp.swift in Sources */,
-				56049DCC2AC71DB20019A00D /* Model.swift in Sources */,
+				56049DCC2AC71DB20019A00D /* Theme.swift in Sources */,
+				56A74CA62AE36FC4007E0904 /* DefaultButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
