@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Theme {
+struct Theme: Identifiable {
+    
     let id: Int
     let name: String
+    let icon: String
 }
-

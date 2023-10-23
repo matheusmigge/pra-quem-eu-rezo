@@ -14,16 +14,18 @@ struct DefaultButtonView: View {
     var body: some View {
         
         Text(text)
-            .frame(width: 200, height: 50)
+            .frame(maxWidth: .infinity, maxHeight: 70)
             .font(.headline)
             .foregroundStyle(.black)
             .background(.yellow)
             .cornerRadius(10)
+        
     }
 }
 
 struct DefaultButton_Previews: PreviewProvider {
     static var previews: some View {
         DefaultButtonView(text: "Oi")
+            .frame(maxWidth: 300)
     }
 }

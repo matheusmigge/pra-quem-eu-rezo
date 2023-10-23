@@ -9,9 +9,24 @@ import SwiftUI
 
 struct ThemeSelectView: View {
     var body: some View {
-        Text("Hello, World!!!")
+        
+        NavigationView {
+            
+            VStack (spacing: 30) {
+                
+                QuestionView()
+                ThemeListView()
+                
+                DefaultButtonView(text: "Pesquisar")
+                
+            }
+            .frame(width: 350)
+            .navigationBarHidden(true)
+        }
+        
     }
 }
+
 
 struct ThemeSelectView_Previews: PreviewProvider {
     static var previews: some View {

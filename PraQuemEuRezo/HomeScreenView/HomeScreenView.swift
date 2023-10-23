@@ -10,25 +10,21 @@ import SwiftUI
 struct HomeScreenView: View {
     var body: some View {
         
-        VStack {
-            Image("app-logo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200)
+        NavigationView {
             
-            Spacer()
-                .frame(height: 40)
-            
-            Button {
+            VStack (spacing: 120) {
                 
-            } label: {
-                DefaultButtonView(text: "Entrar")
-                    .frame(width: 200, height: 50)
-                    .font(.headline)
-                    .foregroundStyle(.black)
-                    .background(.yellow)
-                    .cornerRadius(10)
+                Image("app-logo")
+                    .resizable()
+                    .scaledToFit()
+                
+                NavigationLink(destination: ThemeSelectView(), label: {
+                    DefaultButtonView(text: "Entrar")
+                })
+
             }
+            .frame(width: 280)
+            .navigationBarHidden(true)
         }
     }
 }
