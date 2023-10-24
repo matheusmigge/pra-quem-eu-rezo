@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EntityItemView: View {
+struct EntityView: View {
     
     let entity: Entity
         
@@ -17,7 +17,7 @@ struct EntityItemView: View {
                 Image(entity.image)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 180)
+                    .frame(maxHeight: 180)
                     .clipShape(Circle())
                 
                 VStack {
@@ -28,7 +28,7 @@ struct EntityItemView: View {
                         .font(.system(size: 17))
                         .foregroundColor(.secondary)
                     
-                }
+                }.frame(width: 120)
             }
             
             VStack (alignment: .leading, spacing: 15) {
@@ -54,9 +54,9 @@ struct EntityItemView: View {
     }
 }
 
-struct EntityItemView_Previews: PreviewProvider {
+struct EntityView_Previews: PreviewProvider {
     static var previews: some View {
-        EntityItemView(entity: MockObjects.entitiesMock[2])
+        EntityView(entity: MockObjects.entitiesMock[2])
             .frame(width: 350)
     }
 }

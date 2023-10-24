@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ThemeItemView: View {
+struct DefaultThemeView: View {
     
     let theme: Theme
     let fontSize: Int
@@ -28,10 +28,10 @@ struct ThemeItemView: View {
     }
 }
 
-struct ThemeItemView_Previews: PreviewProvider {
+struct DefaultThemeView_Previews: PreviewProvider {
     
     static var previews: some View {
-        ThemeItemView(theme: Theme(name: "Habilidade", icon: "figure.walk"), fontSize: 30)
+        DefaultThemeView(theme: Theme(name: "Habilidade", icon: "figure.walk"), fontSize: 30)
             .frame(width: 350)
             .background(.secondary)
     }

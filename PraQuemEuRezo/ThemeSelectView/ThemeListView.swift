@@ -19,7 +19,7 @@ struct ThemeListView: View {
                 Button (action: {
                     
                 }, label: {
-                    ThemeItemView(theme: theme, fontSize: 20)
+                    DefaultThemeView(theme: theme, fontSize: 20)
                 })
             }
         }
