@@ -17,11 +17,11 @@ struct ThemeListView: View {
             
             ForEach(themes.sorted(by: { $0.name < $1.name })) {theme in
                 
-                Button (action: {
-                    
-                }, label: {
+                NavigationLink {
+                    EntitySelectView(selectedTheme: theme)
+                } label: {
                     DefaultThemeView(theme: theme, fontSize: 20)
-                })
+                }
             }
         }
         .listStyle(.plain)
