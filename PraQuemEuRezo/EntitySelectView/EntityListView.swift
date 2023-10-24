@@ -15,9 +15,9 @@ struct EntityListView: View {
         
         List {
             
-            ForEach(entities) { entityItem in
+            ForEach(entities) { entity in
                 
-                EntityItemView(entity: entityItem)
+                EntityItemView(entity: entity)
                 
             }
         }

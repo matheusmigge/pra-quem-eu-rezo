@@ -18,7 +18,7 @@ struct ThemeItemView: View {
             Image(systemName: theme.icon)
                 .resizable()
                 .scaledToFit()
-                .frame(width: CGFloat(fontSize))
+                .frame(maxWidth: CGFloat(fontSize), maxHeight: CGFloat(fontSize))
                 .foregroundColor(.yellow)
             
             Text(theme.name)
@@ -29,8 +29,9 @@ struct ThemeItemView: View {
 }
 
 struct ThemeItemView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        ThemeItemView(theme: Theme(name: "Viagens", icon: "airplane.circle.fill"), fontSize: 30)
+        ThemeItemView(theme: Theme(name: "Habilidade", icon: "figure.walk"), fontSize: 30)
             .frame(width: 350)
             .background(.secondary)
     }

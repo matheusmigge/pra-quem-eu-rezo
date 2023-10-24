@@ -10,7 +10,7 @@ import SwiftUI
 struct EntityItemView: View {
     
     let entity: Entity
-    
+        
     var body: some View {
         VStack (spacing: 15){
             HStack {
@@ -39,6 +39,7 @@ struct EntityItemView: View {
                     .fontWeight(.semibold)
                 
                 VStack (alignment: .leading, spacing: 3) {
+                    
                     Text("\(entity.group.name) | Tags:")
                         .font(.system(size: 12))
                         .foregroundColor(.pink)
@@ -55,7 +56,7 @@ struct EntityItemView: View {
 
 struct EntityItemView_Previews: PreviewProvider {
     static var previews: some View {
-        EntityItemView(entity: Entity(id: 3, name: "Afrodite", label: "A deusa do amor", group: Group(id: 1, name: "Mitologia greco-romana"), image: "afrodite", summary: "Deusa do amor, da beleza, do desejo, do sexo e do prazer. Era representada como uma mulher formosa e é a única deusa que aparece nua ou semi-nua.", description: "Seus símbolos são as rosas e outras flores, a concha de vieira, e coroa de murta. Seus animais sagrados são as pombas e passeridae. Seu equivalente romano era Vénus.", tags: ["amor", "beleza", "desejo", "sexo", "prazer"], symbols: ["rosas", "flores", "concha de vieira", "coroa de murta", "pomba", "passeridae"]))
+        EntityItemView(entity: MockObjects.entitiesMock[2])
             .frame(width: 350)
     }
 }

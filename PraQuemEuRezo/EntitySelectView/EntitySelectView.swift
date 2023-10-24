@@ -14,7 +14,19 @@ struct EntitySelectView: View {
     var body: some View {
         
         VStack {
-            EntityTitleView(selectedTheme: selectedTheme)
+            
+            HStack {
+                ThemeItemView(theme: selectedTheme, fontSize: 50)
+                    .font(.system(size: 50))
+                    .foregroundColor(.yellow)
+            }
+            
+            Text("Entidades relacionadas")
+                .font(.system(size: 20))
+                .fontWeight(.light)
+                .foregroundColor(.secondary)
+            
+            
             EntityListView()
         }
     }
@@ -22,6 +34,6 @@ struct EntitySelectView: View {
 
 struct EntitySelectView_Previews: PreviewProvider {
     static var previews: some View {
-        EntitySelectView(selectedTheme: Theme(name: "Justiça", icon: "hammer.circle.fill"))
+        EntitySelectView(selectedTheme: MockObjects.themesMock[5])
     }
 }

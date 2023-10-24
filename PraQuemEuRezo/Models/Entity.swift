@@ -9,7 +9,7 @@ import Foundation
 
 struct Entity: Identifiable {
     
-    let id: Int
+    let id = UUID()
     let name: String
     let label: String
     let group: Group
