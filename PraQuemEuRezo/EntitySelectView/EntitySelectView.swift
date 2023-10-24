@@ -22,6 +22,6 @@ struct EntitySelectView: View {
 
 struct EntitySelectView_Previews: PreviewProvider {
     static var previews: some View {
-        EntitySelectView(selectedTheme: Theme(id: 4, name: "Justiça", icon: "hammer.circle.fill"))
+        EntitySelectView(selectedTheme: Theme(name: "Justiça", icon: "hammer.circle.fill"))
     }
 }

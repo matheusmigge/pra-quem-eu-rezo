@@ -10,19 +10,24 @@ import SwiftUI
 struct ThemeSelectView: View {
     var body: some View {
         
-        NavigationView {
+        
+        VStack (spacing: 30) {
             
-            VStack (spacing: 30) {
-                
-                QuestionView()
-                ThemeListView()
-                
-                DefaultButtonView(text: "Pesquisar")
-                
+            VStack (alignment: .leading) {
+                Text("Não temas! O divino está à uma prece de distância.")
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
+                Text("Sobre que tema você precisa de ajuda?")
+                    .font(.system(size: 30))
+                    .fontWeight(.semibold)
             }
-            .frame(width: 350)
-            .navigationBarHidden(true)
+            ThemeListView()
+            
+            DefaultButtonView(text: "Pesquisar")
+            
         }
+        .frame(width: 350)
+        .navigationBarHidden(true)
         
     }
 }

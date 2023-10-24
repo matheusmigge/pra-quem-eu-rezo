@@ -9,11 +9,13 @@ import SwiftUI
 
 struct EntityListView: View {
     
+    let entities: [Entity] = MockObjects.entitiesMock
+    
     var body: some View {
         
         List {
             
-            ForEach(entitiesMock) { entityItem in
+            ForEach(entities) { entityItem in
                 
                 EntityItemView(entity: entityItem)
                 

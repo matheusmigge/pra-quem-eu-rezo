@@ -30,7 +30,7 @@ struct ThemeItemView: View {
 
 struct ThemeItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ThemeItemView(theme: Theme(id: 1, name: "Viagens", icon: "airplane.circle.fill"), fontSize: 30)
+        ThemeItemView(theme: Theme(name: "Viagens", icon: "airplane.circle.fill"), fontSize: 30)
             .frame(width: 350)
             .background(.secondary)
     }

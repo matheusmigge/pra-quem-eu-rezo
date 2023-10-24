@@ -9,10 +9,12 @@ import SwiftUI
 
 struct ThemeListView: View {
     
+    let themes: [Theme] = MockObjects.themesMock
+    
     var body: some View {
         
         List {
-            ForEach(themesMock) {theme in
+            ForEach(themes) {theme in
                 
                 Button (action: {
                     

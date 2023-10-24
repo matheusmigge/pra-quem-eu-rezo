@@ -30,6 +30,6 @@ struct EntityTitleView: View {
 
 struct TitleView_Previews: PreviewProvider {
     static var previews: some View {
-        EntityTitleView(selectedTheme: Theme(id: 4, name: "Justiça", icon: "hammer.circle.fill"))
+        EntityTitleView(selectedTheme: Theme(name: "Justiça", icon: "hammer.circle.fill"))
     }
 }
