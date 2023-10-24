@@ -20,13 +20,15 @@ struct ThemeSelectView: View {
                 Text("Sobre que tema você precisa de ajuda?")
                     .font(.system(size: 30))
                     .fontWeight(.semibold)
-            }
+            }.padding(.top, 10)
+            
             ThemeListView()
             
             DefaultButtonView(text: "Pesquisar")
             
         }
-        .frame(width: 350)
+        .padding(.horizontal, 20)
+        .padding(.vertical, 30)
         .navigationBarHidden(true)
         
     }

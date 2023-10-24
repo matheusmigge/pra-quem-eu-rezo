@@ -22,7 +22,6 @@ struct EntityListView: View {
             }
         }
         .listStyle(.plain)
-        .frame(height: 600)
         .background(Color.gray)
     }
 }

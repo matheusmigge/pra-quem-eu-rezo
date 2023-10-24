@@ -14,6 +14,7 @@ struct ThemeListView: View {
     var body: some View {
         
         List {
+            
             ForEach(themes.sorted(by: { $0.name < $1.name })) {theme in
                 
                 Button (action: {
@@ -24,8 +25,6 @@ struct ThemeListView: View {
             }
         }
         .listStyle(.plain)
-        .frame(height: 300)
-        
     }
 }
 

@@ -12,14 +12,15 @@ struct EntityView: View {
     let entity: Entity
         
     var body: some View {
-        VStack (spacing: 15){
+        VStack (spacing: 10){
             HStack {
                 Image(entity.image)
                     .resizable()
                     .scaledToFit()
-                    .frame(maxHeight: 180)
                     .clipShape(Circle())
-                
+                    .frame(maxWidth: 200, maxHeight: 200)
+            
+
                 VStack {
                     Text(entity.name)
                         .font(.custom("Didot", size: 30))
@@ -49,14 +50,14 @@ struct EntityView: View {
                 }
             }
         }
-        .padding()
+        
         
     }
 }
 
 struct EntityView_Previews: PreviewProvider {
     static var previews: some View {
-        EntityView(entity: MockObjects.entitiesMock[2])
-            .frame(width: 350)
+        EntityView(entity: MockObjects.entitiesMock[0])
+            .padding(.horizontal, 20)
     }
 }

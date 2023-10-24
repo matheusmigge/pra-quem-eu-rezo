@@ -10,6 +10,8 @@ import SwiftUI
 struct EntitySelectView: View {
     
     let selectedTheme: Theme
+    let entities: [Entity] = MockObjects.entitiesMock
+
     
     var body: some View {
         
@@ -26,9 +28,12 @@ struct EntitySelectView: View {
                 .fontWeight(.light)
                 .foregroundColor(.secondary)
             
-            
             EntityListView()
+
         }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 30)
+        .navigationBarHidden(true)
     }
 }
 
