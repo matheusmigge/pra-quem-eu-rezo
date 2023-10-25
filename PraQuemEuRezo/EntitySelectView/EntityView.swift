@@ -43,10 +43,12 @@ struct EntityView: View {
                 
                 VStack (alignment: .leading, spacing: 15) {
                     
-                    Text(entity.summary)
+                    Text(entity.description)
                         .font(.system(size: 14))
                         .foregroundColor(.secondary)
                         .fontWeight(.semibold)
+                        .multilineTextAlignment(.leading)
+                        .lineLimit(3)
                         
                     
                     VStack (alignment: .leading, spacing: 3) {

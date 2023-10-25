@@ -14,7 +14,6 @@ struct Entity: Identifiable {
     let label: String
     let group: Group
     let image: String
-    let summary: String
     let description: String
     let tags: [Theme]
     let symbols: [Symbol]
