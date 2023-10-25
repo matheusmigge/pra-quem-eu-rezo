@@ -11,6 +11,7 @@ struct DefaultThemeView: View {
     
     let theme: Theme
     let fontSize: Int
+    let iconColor: Color
     
     var body: some View {
         
@@ -19,7 +20,7 @@ struct DefaultThemeView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(maxWidth: CGFloat(fontSize), maxHeight: CGFloat(fontSize))
-                .foregroundColor(.yellow)
+                .foregroundColor(iconColor)
             
             Text(theme.name)
                 .font(.system(size: CGFloat(fontSize)))
@@ -31,8 +32,8 @@ struct DefaultThemeView: View {
 struct DefaultThemeView_Previews: PreviewProvider {
     
     static var previews: some View {
-        DefaultThemeView(theme: Theme(name: "Habilidade", icon: "figure.walk"), fontSize: 30)
+        DefaultThemeView(theme: MockObjects.themesMock[0], fontSize: 30, iconColor: .pink)
             .frame(width: 350)
-            .background(.secondary)
+//            .background(.secondary)
     }
 }

@@ -18,7 +18,7 @@ struct EntitySelectView: View {
         VStack {
             
             HStack {
-                DefaultThemeView(theme: selectedTheme, fontSize: 50)
+                DefaultThemeView(theme: selectedTheme, fontSize: 50,iconColor: .yellow)
                     .font(.system(size: 50))
                     .foregroundColor(.yellow)
             }
