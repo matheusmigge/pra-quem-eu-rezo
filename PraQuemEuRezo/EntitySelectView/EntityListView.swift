@@ -22,7 +22,7 @@ struct EntityListView: View {
             }
         }
         .listStyle(.plain)
-        .background(Color.gray)
+
     }
 }
 

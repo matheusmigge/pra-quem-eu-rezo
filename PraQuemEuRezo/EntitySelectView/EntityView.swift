@@ -49,8 +49,7 @@ struct EntityView: View {
                     TagsView(entity: entity)
                 }
             }
-        }
-        
+        }.padding(.bottom, 10)
         
     }
 }

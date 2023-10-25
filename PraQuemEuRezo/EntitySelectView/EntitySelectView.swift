@@ -18,7 +18,7 @@ struct EntitySelectView: View {
         VStack {
             
             HStack {
-                DefaultThemeView(theme: selectedTheme, fontSize: 50,iconColor: .yellow)
+                DefaultThemeView(theme: selectedTheme, fontSize: 50, fontWeight: .regular, iconColor: .yellow)
                     .font(.system(size: 50))
                     .foregroundColor(.yellow)
             }
@@ -39,6 +39,6 @@ struct EntitySelectView: View {
 
 struct EntitySelectView_Previews: PreviewProvider {
     static var previews: some View {
-        EntitySelectView(selectedTheme: MockObjects.themesMock[5])
+        EntitySelectView(selectedTheme: MockObjects.themesMock[3])
     }
 }

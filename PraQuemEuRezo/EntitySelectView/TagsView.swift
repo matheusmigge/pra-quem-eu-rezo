@@ -14,13 +14,11 @@ struct TagsView: View {
     
     var body: some View {
         ScrollView (.horizontal) {
-            HStack {
-                ForEach(entity.tags, id: \.self) { tag in
+            HStack (spacing: 4) {
+                ForEach(entity.tags, id: \.id) { theme in
                     
-                    Text(tag)
-                        .font(.system(size: 10))
-                        .fontWeight(.bold)
-                        .padding(.horizontal, 4)
+                    DefaultThemeView(theme: theme, fontSize: 10, fontWeight: .bold, iconColor: .white)
+                        .padding(.horizontal, 8)
                         .foregroundColor(.white)
                         .background(.pink)
                         .cornerRadius(10)

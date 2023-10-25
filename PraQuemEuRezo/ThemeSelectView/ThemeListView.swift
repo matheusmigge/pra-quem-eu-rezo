@@ -20,7 +20,7 @@ struct ThemeListView: View {
                 NavigationLink {
                     EntitySelectView(selectedTheme: theme)
                 } label: {
-                    DefaultThemeView(theme: theme, fontSize: 20, iconColor: .pink)
+                    DefaultThemeView(theme: theme, fontSize: 20, fontWeight: .regular, iconColor: .pink)
                 }
             }
         }

@@ -11,6 +11,7 @@ struct DefaultThemeView: View {
     
     let theme: Theme
     let fontSize: Int
+    let fontWeight: Font.Weight
     let iconColor: Color
     
     var body: some View {
@@ -24,7 +25,9 @@ struct DefaultThemeView: View {
             
             Text(theme.name)
                 .font(.system(size: CGFloat(fontSize)))
-        }.frame(height: 40)
+                .fontWeight(fontWeight)
+
+        }.frame(height: CGFloat(fontSize)+10)
         
     }
 }
@@ -32,7 +35,7 @@ struct DefaultThemeView: View {
 struct DefaultThemeView_Previews: PreviewProvider {
     
     static var previews: some View {
-        DefaultThemeView(theme: MockObjects.themesMock[0], fontSize: 30, iconColor: .pink)
+        DefaultThemeView(theme: MockObjects.themesMock[19], fontSize: 30, fontWeight: .regular, iconColor: .pink)
             .frame(width: 350)
 //            .background(.secondary)
     }
