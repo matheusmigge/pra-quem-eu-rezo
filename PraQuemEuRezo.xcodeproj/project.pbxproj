@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		56049DCC2AC71DB20019A00D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56049DCB2AC71DB20019A00D /* Theme.swift */; };
 		56049DCE2AC724760019A00D /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56049DCD2AC724760019A00D /* HomeScreenView.swift */; };
+		563DEA5C2AE938F6001938C7 /* EntityProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DEA5B2AE938F6001938C7 /* EntityProfileView.swift */; };
+		563DEA5E2AE93B55001938C7 /* SymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DEA5D2AE93B55001938C7 /* SymbolsView.swift */; };
+		563DEA602AE94164001938C7 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DEA5F2AE94164001938C7 /* Symbol.swift */; };
 		566EA5E72AC5D61100688D08 /* PraQuemEuRezoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566EA5E62AC5D61100688D08 /* PraQuemEuRezoApp.swift */; };
 		566EA5E92AC5D61100688D08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566EA5E82AC5D61100688D08 /* ContentView.swift */; };
 		566EA5EB2AC5D61300688D08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566EA5EA2AC5D61300688D08 /* Assets.xcassets */; };
@@ -30,6 +33,9 @@
 /* Begin PBXFileReference section */
 		56049DCB2AC71DB20019A00D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		56049DCD2AC724760019A00D /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		563DEA5B2AE938F6001938C7 /* EntityProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityProfileView.swift; sourceTree = "<group>"; };
+		563DEA5D2AE93B55001938C7 /* SymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsView.swift; sourceTree = "<group>"; };
+		563DEA5F2AE94164001938C7 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		566EA5E32AC5D61100688D08 /* PraQuemEuRezo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PraQuemEuRezo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		566EA5E62AC5D61100688D08 /* PraQuemEuRezoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraQuemEuRezoApp.swift; sourceTree = "<group>"; };
 		566EA5E82AC5D61100688D08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		563DEA5A2AE938A8001938C7 /* EntityProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				563DEA5B2AE938F6001938C7 /* EntityProfileView.swift */,
+				563DEA5D2AE93B55001938C7 /* SymbolsView.swift */,
+			);
+			path = EntityProfileView;
+			sourceTree = "<group>";
+		};
 		566EA5DA2AC5D61100688D08 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +98,7 @@
 				56BFA46E2AE3619300AEA8A1 /* HomeScreenView */,
 				56BFA46F2AE361BC00AEA8A1 /* ThemeSelectView */,
 				568A2F592AE60C660069F686 /* EntitySelectView */,
+				563DEA5A2AE938A8001938C7 /* EntityProfileView */,
 				56BFA4702AE361D300AEA8A1 /* Models */,
 				566EA5EA2AC5D61300688D08 /* Assets.xcassets */,
 				566EA5EC2AC5D61300688D08 /* Preview Content */,
@@ -152,6 +168,7 @@
 				56049DCB2AC71DB20019A00D /* Theme.swift */,
 				56FDE6862AE7171D00459630 /* Entity.swift */,
 				56FDE6882AE7187500459630 /* Group.swift */,
+				563DEA5F2AE94164001938C7 /* Symbol.swift */,
 				56A74CA42AE36F93007E0904 /* Views */,
 			);
 			path = Models;
@@ -229,11 +246,14 @@
 			files = (
 				56FDE6852AE7142300459630 /* EntitySelectView.swift in Sources */,
 				568A2F5F2AE6A6C40069F686 /* EntityView.swift in Sources */,
+				563DEA5C2AE938F6001938C7 /* EntityProfileView.swift in Sources */,
 				56FDE6892AE7187500459630 /* Group.swift in Sources */,
 				56BFA4752AE3662C00AEA8A1 /* ThemeSelectView.swift in Sources */,
+				563DEA602AE94164001938C7 /* Symbol.swift in Sources */,
 				566EA5E92AC5D61100688D08 /* ContentView.swift in Sources */,
 				56BFA4732AE3624600AEA8A1 /* MockObjects.swift in Sources */,
 				56FDE68B2AE724F400459630 /* EntityListView.swift in Sources */,
+				563DEA5E2AE93B55001938C7 /* SymbolsView.swift in Sources */,
 				56049DCE2AC724760019A00D /* HomeScreenView.swift in Sources */,
 				56D1A2F22AE4987100DAAA50 /* DefaultThemeView.swift in Sources */,
 				566EA5E72AC5D61100688D08 /* PraQuemEuRezoApp.swift in Sources */,

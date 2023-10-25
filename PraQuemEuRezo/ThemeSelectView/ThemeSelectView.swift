@@ -27,7 +27,7 @@ struct ThemeSelectView: View {
             DefaultButtonView(text: "Pesquisar")
             
         }
-        .padding(.horizontal, 20)
+        .padding(.horizontal, 30)
         .padding(.vertical, 30)
         .navigationBarHidden(true)
         

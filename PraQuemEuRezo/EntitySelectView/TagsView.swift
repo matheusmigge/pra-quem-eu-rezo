@@ -13,7 +13,7 @@ struct TagsView: View {
     let entity: Entity
     
     var body: some View {
-        ScrollView (.horizontal) {
+        ScrollView (.horizontal, showsIndicators: false) {
             HStack (spacing: 4) {
                 ForEach(entity.tags, id: \.id) { theme in
                     

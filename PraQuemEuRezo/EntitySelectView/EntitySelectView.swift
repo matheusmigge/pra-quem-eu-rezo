@@ -31,7 +31,7 @@ struct EntitySelectView: View {
             EntityListView()
 
         }
-        .padding(.horizontal, 10)
+        .padding(.horizontal, 30)
         .padding(.vertical, 30)
         .navigationBarHidden(true)
     }
@@ -39,6 +39,6 @@ struct EntitySelectView: View {
 
 struct EntitySelectView_Previews: PreviewProvider {
     static var previews: some View {
-        EntitySelectView(selectedTheme: MockObjects.themesMock[3])
+        EntitySelectView(selectedTheme: MockObjects.themesMock[5])
     }
 }
