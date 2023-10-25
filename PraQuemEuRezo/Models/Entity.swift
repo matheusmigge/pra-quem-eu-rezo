@@ -17,5 +17,5 @@ struct Entity: Identifiable {
     let summary: String
     let description: String
     let tags: [Theme]
-    let symbols: [String]
+    let symbols: [Symbol]
 }

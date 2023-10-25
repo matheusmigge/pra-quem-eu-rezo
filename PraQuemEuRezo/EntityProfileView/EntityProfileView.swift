@@ -42,7 +42,6 @@ struct EntityProfileView: View {
                     .clipShape(Circle())
                     .frame(maxWidth: 200, maxHeight: 200)
             
-
                 
             }
             
@@ -52,6 +51,7 @@ struct EntityProfileView: View {
                     .font(.system(size: 14))
                     .foregroundColor(.secondary)
                     .fontWeight(.semibold)
+                    
                 
                 Text(entity.description)
                     .font(.system(size: 14))
@@ -62,13 +62,17 @@ struct EntityProfileView: View {
             }
             
             VStack (alignment: .leading) {
+                
                 Text("Símbolos de \(entity.name):")
                     .font(.system(size: 20))
                     .foregroundColor(.pink)
                     .fontWeight(.semibold)
+                
+                SymbolsView(entity: entity)
+
             }
             
-        }.padding(.bottom, 10)
+        }
     }
 }
 
