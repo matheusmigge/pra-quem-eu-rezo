@@ -14,7 +14,20 @@ struct EntityProfileView: View {
     var body: some View {
         
         List {
+            
             VStack {
+                
+                VStack (alignment: .leading, spacing: 3) {
+                    
+                    Text("\(entity.group.name) | Tags:")
+                        .font(.system(size: 12))
+                        .foregroundColor(.pink)
+                        .fontWeight(.semibold)
+                    
+                    TagsView(entity: entity)
+                }
+                .padding(.bottom, 5)
+                
                 HStack {
                     VStack {
                         Text(entity.name)
@@ -34,17 +47,6 @@ struct EntityProfileView: View {
                         .frame(width: 120, height: 120)
                 }
                 .padding(.bottom, 10)
-
-                VStack (alignment: .leading, spacing: 3) {
-                    
-                    Text("\(entity.group.name) | Tags:")
-                        .font(.system(size: 12))
-                        .foregroundColor(.pink)
-                        .fontWeight(.semibold)
-                    
-                    TagsView(entity: entity)
-                }
-                .padding(.bottom, 5)
                 
                 Text(entity.description)
                     .padding(.bottom, 10)

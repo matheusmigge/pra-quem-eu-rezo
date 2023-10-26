@@ -32,20 +32,11 @@ struct SymbolsView: View {
                             .fontWeight(.bold)
                             .frame(width: frameSize)
                             .foregroundColor(.pink)
-                            
                     }
-                    
-                    
-                    
                 }
             }
-//            .frame(width: 350)
-//            .background(Color.gray)
-
+            .padding(.bottom, 10)
         }
-        
-        
-        
     }
 }
 
