@@ -10,27 +10,26 @@ import SwiftUI
 struct ThemeSelectView: View {
     var body: some View {
         
-        
-        VStack (spacing: 30) {
+        VStack {
             
-            VStack (alignment: .leading) {
+            VStack (alignment: .center) {
                 Text("Não temas! O divino está à uma prece de distância.")
-                    .font(.footnote)
+                    .font(.system(size: 12))
                     .foregroundColor(.secondary)
                 Text("Sobre que tema você precisa de ajuda?")
-                    .font(.system(size: 30))
+                    .font(.system(size: 27))
                     .fontWeight(.semibold)
-            }.padding(.top, 10)
+            }
+            .multilineTextAlignment(.center)
             
             ThemeListView()
             
             DefaultButtonView(text: "Pesquisar")
             
         }
-        .padding(.horizontal, 30)
-        .padding(.vertical, 30)
+        .padding(.horizontal, 20)
+        .padding(.vertical, 25)
         .navigationBarHidden(true)
-        
     }
 }
 

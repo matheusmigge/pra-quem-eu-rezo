@@ -21,9 +21,8 @@ struct HomeScreenView: View {
                 NavigationLink(destination: ThemeSelectView(), label: {
                     DefaultButtonView(text: "Entrar")
                 })
-
             }
-            .frame(width: 280)
+            .padding(.horizontal, 30)
             .navigationBarHidden(true)
         }
     }

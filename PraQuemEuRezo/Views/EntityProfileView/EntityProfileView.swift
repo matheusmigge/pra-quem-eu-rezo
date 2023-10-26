@@ -13,22 +13,9 @@ struct EntityProfileView: View {
     
     var body: some View {
         
-        ScrollView {
-            
-            VStack (spacing: 10){
-                
-                VStack (alignment: .leading, spacing: 3) {
-                    
-                    Text("\(entity.group.name) | Tags:")
-                        .font(.system(size: 12))
-                        .foregroundColor(.pink)
-                        .fontWeight(.semibold)
-                    
-                    TagsView(entity: entity)
-                }
-                
+        List {
+            VStack {
                 HStack {
-                    
                     VStack {
                         Text(entity.name)
                             .font(.custom("Didot", size: 30))
@@ -39,22 +26,34 @@ struct EntityProfileView: View {
                             .multilineTextAlignment(.center)
                         
                     }.frame(width: 120)
-                    
+                
                     Image(entity.image)
                         .resizable()
-                        .scaledToFit()
+                        .scaledToFill()
                         .clipShape(Circle())
-                        .frame(maxWidth: 200, maxHeight: 200)
-                    
-                    
+                        .frame(width: 120, height: 120)
                 }
+                .padding(.bottom, 10)
+
+                VStack (alignment: .leading, spacing: 3) {
+                    
+                    Text("\(entity.group.name) | Tags:")
+                        .font(.system(size: 12))
+                        .foregroundColor(.pink)
+                        .fontWeight(.semibold)
+                    
+                    TagsView(entity: entity)
+                }
+                .padding(.bottom, 5)
                 
                 Text(entity.description)
                     .padding(.bottom, 10)
                     .font(.system(size: 15))
                 
+//                JustifiedTextView(entity.description)
+//                    .frame(height: 600)
+                
                 VStack (alignment: .leading) {
-                    
                     Text("Símbolos de \(entity.name):")
                         .font(.system(size: 20))
                         .foregroundColor(.pink)
@@ -64,14 +63,14 @@ struct EntityProfileView: View {
                     
                 }
             }
+            .padding(.vertical, 20)
+            .ignoresSafeArea(.all)
         }
-        .padding(.top, 30)
     }
 }
 
 struct EntityProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        EntityProfileView(entity: MockObjects.entitiesMock[1])
-            .padding(.horizontal, 30)
+        EntityProfileView(entity: MockObjects.entitiesMock[0])
     }
 }

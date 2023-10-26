@@ -18,8 +18,7 @@ struct EntitySelectView: View {
         VStack {
             
             HStack {
-                DefaultThemeView(theme: selectedTheme, fontSize: 50, fontWeight: .regular, iconColor: .yellow)
-                    .font(.system(size: 50))
+                DefaultThemeView(theme: selectedTheme, fontSize: 38, fontWeight: .regular, iconColor: .yellow)
                     .foregroundColor(.yellow)
             }
             
@@ -31,14 +30,15 @@ struct EntitySelectView: View {
             EntityListView()
 
         }
-        .padding(.horizontal, 30)
+        .padding(.horizontal, 20)
         .padding(.vertical, 30)
         .navigationBarHidden(true)
+
     }
 }
 
 struct EntitySelectView_Previews: PreviewProvider {
     static var previews: some View {
-        EntitySelectView(selectedTheme: MockObjects.themesMock[5])
+        EntitySelectView(selectedTheme: MockObjects.themesMock[1])
     }
 }

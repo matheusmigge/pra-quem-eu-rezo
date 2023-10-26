@@ -14,7 +14,7 @@ struct DefaultButtonView: View {
     var body: some View {
         
         Text(text)
-            .frame(maxWidth: .infinity, maxHeight: 70)
+            .frame(maxWidth: .infinity, maxHeight: 60)
             .font(.headline)
             .foregroundStyle(.black)
             .background(.yellow)
