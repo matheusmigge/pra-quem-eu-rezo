@@ -24,8 +24,11 @@ struct ThemeSelectView: View {
             
             ThemeListView()
             
-            DefaultButtonView(text: "Pesquisar")
-            
+            Button {
+
+            } label: {
+                DefaultButtonView(text: "Pesquisar")
+            }
         }
         .padding(.horizontal, 20)
         .padding(.vertical, 25)

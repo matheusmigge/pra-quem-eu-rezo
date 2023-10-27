@@ -10,18 +10,16 @@ import SwiftUI
 struct ThemeListView: View {
     
     let themes: [Theme] = MockObjects.themesMock
+    @State var selectedTheme: String? = nil
     
     var body: some View {
         
         List {
             
-            ForEach(themes.sorted(by: { $0.name < $1.name })) {theme in
+            ForEach(themes.sorted(by: { $0.name < $1.name })) { theme in
                 
-                NavigationLink {
-                    EntitySelectView(selectedTheme: theme)
-                } label: {
-                    DefaultThemeView(theme: theme, fontSize: 20, fontWeight: .regular, iconColor: .pink)
-                }
+                ThemeListRowView(theme: theme, selectedTheme: $selectedTheme)
+                     
             }
         }
         .listStyle(.plain)
