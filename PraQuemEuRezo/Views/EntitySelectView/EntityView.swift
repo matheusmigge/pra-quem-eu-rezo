@@ -19,10 +19,13 @@ struct EntityView: View {
             EntityProfileView(entity: entity)
         } label: {
             VStack (spacing: 10){
+                
                 HStack {
-                    VStack {
+                    
+                    VStack (alignment: .leading) {
                         Text(entity.name)
                             .font(.custom("Didot", size: 30))
+                            .foregroundColor(.black)
                             .fontWeight(.bold)
                         
                         Text(entity.label)
@@ -30,17 +33,16 @@ struct EntityView: View {
                             .foregroundColor(.secondary)
                             .fontWeight(.light)
                             .multilineTextAlignment(.leading)
-
-                        
                     }
                     
                     Spacer()
-                
+                    
                     Image(entity.image)
                         .resizable()
                         .scaledToFill()
                         .clipShape(Circle())
                         .frame(width: frameSize, height: frameSize)
+                    
                 }
                 
                 VStack (alignment: .leading, spacing: 15) {
@@ -62,7 +64,9 @@ struct EntityView: View {
                         TagsView(entity: entity)
                     }
                 }
-            }.padding(.bottom, 10)
+            }
+            .padding(.vertical, 10)
+            .padding(.leading, 5)
         }
     }
 }
@@ -70,7 +74,7 @@ struct EntityView: View {
 struct EntityView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            EntityView(entity: MockObjects.entitiesMock[2])
+            EntityView(entity: MockObjects.entitiesMock[1])
                 .padding(.horizontal, 30)
         }
     }

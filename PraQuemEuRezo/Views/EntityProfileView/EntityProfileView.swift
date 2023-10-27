@@ -26,9 +26,8 @@ struct EntityProfileView: View {
     var body: some View {
         
         List {
-            
-            VStack {
-                
+            VStack (alignment: .leading, spacing: 10) {
+
                 VStack (alignment: .leading, spacing: 3) {
                     
                     Text("\(entity.group.name) | Tags:")
@@ -38,30 +37,23 @@ struct EntityProfileView: View {
                     
                     TagsView(entity: entity)
                 }
-                .padding(.bottom, 5)
                 
-                HStack {
-                    VStack {
-                        Text(entity.name)
-                            .font(.custom("Didot", size: 30))
-                            .fontWeight(.bold)
-                        Text(entity.label)
-                            .font(.system(size: 17))
-                            .foregroundColor(.secondary)
-                            .multilineTextAlignment(.center)
-                        
-                    }.frame(width: 120)
-                
+                VStack {
                     Image(entity.image)
                         .resizable()
                         .scaledToFill()
-                        .clipShape(Circle())
-                        .frame(width: 120, height: 120)
+                        .frame(height: 200)
+                        .cornerRadius(20)
                 }
-                .padding(.bottom, 10)
+                .padding(.top, 10)
+                
+                Text(entity.label)
+                    .font(.system(size: 20))
+                    .foregroundColor(.pink)
+                    .fontWeight(.semibold)
+                    .multilineTextAlignment(.leading)
                 
                 Text(entity.description)
-                    .padding(.bottom, 10)
                     .font(.system(size: 15))
 
                 

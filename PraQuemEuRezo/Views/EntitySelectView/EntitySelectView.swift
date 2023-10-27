@@ -19,7 +19,6 @@ struct EntitySelectView: View {
             
             HStack {
                 DefaultThemeView(theme: selectedTheme, fontSize: 20, fontWeight: .regular, iconColor: .pink)
-//                    .foregroundColor(.yellow)
             }
                         
             EntityListView()
