@@ -13,7 +13,7 @@ struct EntityView: View {
         
     var body: some View {
         
-        let frameSize: CGFloat = 120
+        let frameSize: CGFloat = 110
         
         NavigationLink {
             EntityProfileView(entity: entity)
@@ -44,16 +44,7 @@ struct EntityView: View {
                         .frame(width: frameSize, height: frameSize)
                     
                 }
-                
-                VStack (alignment: .leading, spacing: 15) {
                     
-                    Text(entity.description)
-                        .font(.system(size: 14))
-                        .foregroundColor(.secondary)
-                        .fontWeight(.semibold)
-                        .multilineTextAlignment(.leading)
-                        .lineLimit(3)
-                        
                     VStack (alignment: .leading, spacing: 3) {
                         
                         Text("\(entity.group.name) | Tags:")
@@ -63,10 +54,8 @@ struct EntityView: View {
                         
                         TagsView(entity: entity)
                     }
-                }
+                
             }
-            .padding(.vertical, 10)
-            .padding(.leading, 5)
         }
     }
 }
@@ -75,7 +64,7 @@ struct EntityView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             EntityView(entity: MockObjects.entitiesMock[1])
-                .padding(.horizontal, 30)
+                .padding(.horizontal, 10)
         }
     }
 }

@@ -27,7 +27,6 @@
 		56FDE6852AE7142300459630 /* EntitySelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FDE6842AE7142300459630 /* EntitySelectView.swift */; };
 		56FDE6872AE7171D00459630 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FDE6862AE7171D00459630 /* Entity.swift */; };
 		56FDE6892AE7187500459630 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FDE6882AE7187500459630 /* Group.swift */; };
-		56FDE68B2AE724F400459630 /* EntityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FDE68A2AE724F400459630 /* EntityListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +51,6 @@
 		56FDE6842AE7142300459630 /* EntitySelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitySelectView.swift; sourceTree = "<group>"; };
 		56FDE6862AE7171D00459630 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		56FDE6882AE7187500459630 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
-		56FDE68A2AE724F400459630 /* EntityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				56FDE6842AE7142300459630 /* EntitySelectView.swift */,
-				56FDE68A2AE724F400459630 /* EntityListView.swift */,
 				568A2F5E2AE6A6C40069F686 /* EntityView.swift */,
 				568A2F602AE6C33F0069F686 /* TagsView.swift */,
 			);
@@ -261,7 +258,6 @@
 				563DEA602AE94164001938C7 /* Symbol.swift in Sources */,
 				566EA5E92AC5D61100688D08 /* ContentView.swift in Sources */,
 				56BFA4732AE3624600AEA8A1 /* MockObjects.swift in Sources */,
-				56FDE68B2AE724F400459630 /* EntityListView.swift in Sources */,
 				563DEA5E2AE93B55001938C7 /* SymbolsView.swift in Sources */,
 				56049DCE2AC724760019A00D /* HomeScreenView.swift in Sources */,
 				56D1A2F22AE4987100DAAA50 /* DefaultThemeView.swift in Sources */,

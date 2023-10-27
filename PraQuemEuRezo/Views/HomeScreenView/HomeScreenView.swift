@@ -12,17 +12,19 @@ struct HomeScreenView: View {
         
         NavigationView {
             
-            VStack (spacing: 120) {
+            VStack {
                 
                 Image("app-logo")
                     .resizable()
                     .scaledToFit()
                 
+                Spacer()
+                
                 NavigationLink(destination: ThemeSelectView(), label: {
                     DefaultButtonView(text: "Entrar")
                 })
             }
-            .padding(.horizontal, 30)
+            .padding(30)
             .navigationBarHidden(true)
         }
     }
