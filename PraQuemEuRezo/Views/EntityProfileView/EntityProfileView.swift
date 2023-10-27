@@ -11,6 +11,18 @@ struct EntityProfileView: View {
     
     let entity: Entity
     
+    init(entity: Entity) {
+        
+        self.entity = entity
+
+        //Use this if NavigationBarTitle is with Large Font
+        UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "Georgia", size: 50)!, .foregroundColor: UIColor.black]
+
+        //Use this if NavigationBarTitle is with displayMode = .inline
+//        UINavigationBar.appearance().titleTextAttributes = [.font : UIFont(name: "Helvetica Bold", size: 20)!, .foregroundColor: UIColor.black]
+
+    }
+    
     var body: some View {
         
         List {
@@ -51,9 +63,7 @@ struct EntityProfileView: View {
                 Text(entity.description)
                     .padding(.bottom, 10)
                     .font(.system(size: 15))
-                
-//                JustifiedTextView(entity.description)
-//                    .frame(height: 600)
+
                 
                 VStack (alignment: .leading) {
                     Text("Símbolos de \(entity.name):")
@@ -65,14 +75,16 @@ struct EntityProfileView: View {
                     
                 }
             }
-            .padding(.vertical, 20)
-            .ignoresSafeArea(.all)
         }
+        .navigationBarTitle(entity.name)
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 
 struct EntityProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        EntityProfileView(entity: MockObjects.entitiesMock[0])
+        NavigationView {
+            EntityProfileView(entity: MockObjects.entitiesMock[0])
+        }
     }
 }

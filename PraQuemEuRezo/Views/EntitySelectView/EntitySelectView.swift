@@ -18,26 +18,23 @@ struct EntitySelectView: View {
         VStack {
             
             HStack {
-                DefaultThemeView(theme: selectedTheme, fontSize: 38, fontWeight: .regular, iconColor: .yellow)
-                    .foregroundColor(.yellow)
+                DefaultThemeView(theme: selectedTheme, fontSize: 20, fontWeight: .regular, iconColor: .pink)
+//                    .foregroundColor(.yellow)
             }
-            
-            Text("Entidades relacionadas")
-                .font(.system(size: 20))
-                .fontWeight(.light)
-                .foregroundColor(.secondary)
-            
+                        
             EntityListView()
 
         }
-        .padding(.vertical, 30)
-        .navigationBarHidden(true)
+        .navigationTitle("Entidades")
+        .navigationBarTitleDisplayMode(.inline)
 
     }
 }
 
 struct EntitySelectView_Previews: PreviewProvider {
     static var previews: some View {
-        EntitySelectView(selectedTheme: MockObjects.themesMock[1])
+        NavigationView {
+            EntitySelectView(selectedTheme: MockObjects.themesMock[1])
+        }
     }
 }

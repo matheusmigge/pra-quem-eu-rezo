@@ -20,16 +20,19 @@ struct EntityView: View {
         } label: {
             VStack (spacing: 10){
                 HStack {
-                    VStack (alignment: .leading) {
+                    VStack {
                         Text(entity.name)
                             .font(.custom("Didot", size: 30))
                             .fontWeight(.bold)
+                        
                         Text(entity.label)
                             .font(.system(size: 15))
                             .foregroundColor(.secondary)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.leading)
+
                         
-                    }.frame(width: frameSize)
+                    }
                     
                     Spacer()
                 
@@ -66,7 +69,9 @@ struct EntityView: View {
 
 struct EntityView_Previews: PreviewProvider {
     static var previews: some View {
-        EntityView(entity: MockObjects.entitiesMock[2])
-            .padding(.horizontal, 30)
+        NavigationView {
+            EntityView(entity: MockObjects.entitiesMock[2])
+                .padding(.horizontal, 30)
+        }
     }
 }

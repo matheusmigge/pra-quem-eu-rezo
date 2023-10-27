@@ -28,10 +28,11 @@ struct TagsView: View {
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.pink, lineWidth: 1)
                                 .padding(.vertical, 1)
-
+                            
                         }
                 }
             }
+            .padding(.horizontal, 1)
         }
     }
 }
@@ -39,6 +40,6 @@ struct TagsView: View {
 struct TagsView_Previews: PreviewProvider {
     static var previews: some View {
         TagsView(entity: MockObjects.entitiesMock[1])
-            .frame(width: 350)
+            .padding(.horizontal, 5)
     }
 }

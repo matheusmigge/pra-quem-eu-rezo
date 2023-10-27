@@ -30,6 +30,7 @@ struct ThemeSelectView: View {
         .padding(.horizontal, 20)
         .padding(.vertical, 25)
         .navigationBarHidden(true)
+        .navigationTitle("Temas")
     }
 }
 
