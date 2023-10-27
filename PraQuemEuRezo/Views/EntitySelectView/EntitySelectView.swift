@@ -30,7 +30,6 @@ struct EntitySelectView: View {
             EntityListView()
 
         }
-        .padding(.horizontal, 20)
         .padding(.vertical, 30)
         .navigationBarHidden(true)
 

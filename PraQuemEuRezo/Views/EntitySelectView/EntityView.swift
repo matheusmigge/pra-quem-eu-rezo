@@ -20,16 +20,18 @@ struct EntityView: View {
         } label: {
             VStack (spacing: 10){
                 HStack {
-                    VStack {
+                    VStack (alignment: .leading) {
                         Text(entity.name)
                             .font(.custom("Didot", size: 30))
                             .fontWeight(.bold)
                         Text(entity.label)
-                            .font(.system(size: 17))
+                            .font(.system(size: 15))
                             .foregroundColor(.secondary)
-                            .multilineTextAlignment(.center)
+                            .multilineTextAlignment(.leading)
                         
                     }.frame(width: frameSize)
+                    
+                    Spacer()
                 
                     Image(entity.image)
                         .resizable()
