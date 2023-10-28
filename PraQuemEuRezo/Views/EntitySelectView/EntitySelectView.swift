@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EntitySelectView: View {
     
-    let selectedTheme: Theme
+    let selectedTheme: Theme?
     let entities: [Entity] = MockObjects.entitiesMock
     
     
@@ -18,8 +18,10 @@ struct EntitySelectView: View {
         
         List {
             
-            HStack {
-                DefaultThemeView(theme: selectedTheme, fontSize: 30, fontWeight: .regular, iconColor: .pink)
+            VStack {
+                if let theme = selectedTheme {
+                    DefaultThemeView(theme: theme, fontSize: 30, fontWeight: .regular, iconColor: .pink)
+                }
             }
             .frame(maxWidth: .infinity)
             .listRowSeparator(.hidden)
@@ -35,8 +37,6 @@ struct EntitySelectView: View {
         .listStyle(.plain)
         .navigationTitle("Entidades")
         .navigationBarTitleDisplayMode(.inline)
-        
- 
     }
 }
 

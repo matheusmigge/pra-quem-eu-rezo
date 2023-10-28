@@ -10,27 +10,29 @@ import SwiftUI
 struct ThemeListRowView: View {
     
     let theme: Theme
-    @Binding var selectedTheme: String?
+    var isSelected: Bool
+    var onTap: () -> Void
     
     var body: some View {
         
         Button {
             
-            self.selectedTheme = self.theme.name
+            onTap()
             
         } label: {
             HStack {
-                
-                DefaultThemeView(theme: theme, fontSize: 20, fontWeight: .regular, iconColor: .pink)
+                DefaultThemeView(theme: theme, fontSize: 20, fontWeight: isSelected ? .heavy : .regular, iconColor: isSelected ? .white : .accentColor)
+                    .foregroundColor(isSelected ? .white : .black)
                 
                 Spacer()
                 
-                if theme.name == selectedTheme {
+                if isSelected {
                     Image(systemName: "checkmark.circle.fill")
-                        .foregroundColor(.accentColor)
+                        .foregroundColor(isSelected ? .white : .accentColor)
                 }
             }
         }
+        .listRowBackground(isSelected ? Color.accentColor : .none)
         
         
     }
@@ -38,6 +40,6 @@ struct ThemeListRowView: View {
 
 struct ThemeListRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ThemeListRowView(theme: MockObjects.themesMock[0], selectedTheme: .constant("Amor"))
+        ThemeListRowView(theme: MockObjects.themesMock[0], isSelected: false, onTap: {print("clicou em mim")})
     }
 }

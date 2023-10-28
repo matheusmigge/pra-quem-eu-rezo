@@ -7,9 +7,13 @@
 
 import Foundation
 
-struct Theme: Identifiable {
+struct Theme: Identifiable, Equatable {
     
     let id = UUID()
     let name: String
     let icon: String
+    
+    static func ==(lhs: Theme, rhs: Theme) -> Bool {
+        return lhs.id == rhs.id
+    }
 }
