@@ -9,11 +9,8 @@ import SwiftUI
 
 struct HomeScreenView: View {
     var body: some View {
-        
         NavigationView {
-            
-            VStack {
-                
+            VStack {     
                 Image("app-logo")
                     .resizable()
                     .scaledToFit()

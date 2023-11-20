@@ -9,7 +9,7 @@ import Foundation
 
 struct Theme: Identifiable, Equatable {
     
-    let id = UUID()
+    let id: Int
     let name: String
     let icon: String
     

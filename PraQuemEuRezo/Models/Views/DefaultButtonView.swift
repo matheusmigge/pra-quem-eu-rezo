@@ -12,14 +12,12 @@ struct DefaultButtonView: View {
     let text: String
     
     var body: some View {
-        
         Text(text)
             .frame(maxWidth: .infinity, maxHeight: 60)
             .font(.headline)
             .foregroundStyle(.black)
             .background(.yellow)
             .cornerRadius(10)
-        
     }
 }
 

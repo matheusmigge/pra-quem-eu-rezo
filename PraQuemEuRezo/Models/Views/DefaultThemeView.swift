@@ -15,7 +15,6 @@ struct DefaultThemeView: View {
     let iconColor: Color
     
     var body: some View {
-        
         HStack {
             Image(systemName: theme.icon)
                 .resizable()
@@ -28,7 +27,6 @@ struct DefaultThemeView: View {
                 .fontWeight(fontWeight)
 
         }.frame(height: CGFloat(fontSize)+10)
-        
     }
 }
 

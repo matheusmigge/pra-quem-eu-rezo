@@ -14,9 +14,7 @@ struct ThemeSelectView: View {
     @State var shouldNavigateToDestination: Bool = false
     
     var body: some View {
-        
         ZStack {
-            
             NavigationLink("", isActive: $shouldNavigateToDestination) {
                 EntitySelectView(selectedTheme: selectedTheme)
             }
@@ -46,8 +44,6 @@ struct ThemeSelectView: View {
                 }
                 .listStyle(.plain)
                 
-                
-                
                 Button {
                     shouldNavigateToDestination = true
                 } label: {
@@ -63,8 +59,6 @@ struct ThemeSelectView: View {
         }
     }
 }
-
-
 
 struct ThemeSelectView_Previews: PreviewProvider {
     static var previews: some View {

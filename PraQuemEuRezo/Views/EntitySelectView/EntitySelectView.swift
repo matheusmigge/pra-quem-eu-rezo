@@ -12,12 +12,12 @@ struct EntitySelectView: View {
     let selectedTheme: Theme?
     let entities: [Entity] = MockObjects.entitiesMock
     
+    var filteredEntities: [Entity] {
+       return entities.filter { entity in entity.tags.contains(selectedTheme!) }
+    }
     
     var body: some View {
-        
-        
         List {
-            
             VStack {
                 if let theme = selectedTheme {
                     DefaultThemeView(theme: theme, fontSize: 30, fontWeight: .regular, iconColor: .pink)
@@ -26,15 +26,27 @@ struct EntitySelectView: View {
             .frame(maxWidth: .infinity)
             .listRowSeparator(.hidden)
             
-            ForEach(entities) { entity in
+            if filteredEntities.isEmpty {
+                HStack {
+                    Spacer()
+                    Text("\nNenhuma entidade relevante foi encontrada para o tema selecionado :( \n")
+                        .font(.title3)
+                        .foregroundColor(.secondary)
+                        .multilineTextAlignment(.center)
+                    Spacer()
+                }
                 
-                EntityView(entity: entity)
-                
+            } else {
+                ForEach(filteredEntities) { entity in
+                    
+                    EntityView(entity: entity)
+                    
+                }
+                .padding(.vertical, 10)
             }
-            .padding(.vertical, 10)
         }
         .padding(.top, -20)
-        .listStyle(.plain)
+        .listStyle(.automatic)
         .navigationTitle("Entidades")
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -43,7 +55,7 @@ struct EntitySelectView: View {
 struct EntitySelectView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            EntitySelectView(selectedTheme: MockObjects.themesMock[6])
+            EntitySelectView(selectedTheme: MockObjects.themesMock[0])
         }
     }
 }

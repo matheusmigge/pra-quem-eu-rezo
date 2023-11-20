@@ -14,7 +14,6 @@ struct ThemeListRowView: View {
     var onTap: () -> Void
     
     var body: some View {
-        
         Button {
             
             onTap()
@@ -33,8 +32,6 @@ struct ThemeListRowView: View {
             }
         }
         .listRowBackground(isSelected ? Color.accentColor : .none)
-        
-        
     }
 }
 

@@ -10,7 +10,7 @@ import SwiftUI
 struct EntityView: View {
     
     let entity: Entity
-        
+    
     var body: some View {
         
         let frameSize: CGFloat = 110
@@ -19,9 +19,7 @@ struct EntityView: View {
             EntityProfileView(entity: entity)
         } label: {
             VStack (spacing: 10){
-                
                 HStack {
-                    
                     VStack (alignment: .leading) {
                         Text(entity.name)
                             .font(.custom("Didot", size: 30))
@@ -42,19 +40,17 @@ struct EntityView: View {
                         .scaledToFill()
                         .clipShape(Circle())
                         .frame(width: frameSize, height: frameSize)
-                    
                 }
-                    
-                    VStack (alignment: .leading, spacing: 3) {
-                        
-                        Text("\(entity.group.name) | Tags:")
-                            .font(.system(size: 12))
-                            .foregroundColor(.pink)
-                            .fontWeight(.semibold)
-                        
-                        TagsView(entity: entity)
-                    }
                 
+                VStack (alignment: .leading, spacing: 3) {
+                    
+                    Text("\(entity.group.name) | Tags:")
+                        .font(.system(size: 12))
+                        .foregroundColor(.pink)
+                        .fontWeight(.semibold)
+                    
+                    TagsView(entity: entity)
+                }
             }
         }
     }
