@@ -23,12 +23,12 @@ struct EntityView: View {
                     VStack (alignment: .leading) {
                         Text(entity.name)
                             .font(.custom("Didot", size: 30))
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
                             .fontWeight(.bold)
                         
                         Text(entity.label)
                             .font(.system(size: 15))
-                            .foregroundColor(.secondary)
+                            .foregroundColor(.primary)
                             .fontWeight(.light)
                             .multilineTextAlignment(.leading)
                     }
@@ -46,7 +46,7 @@ struct EntityView: View {
                     
                     Text("\(entity.group.name) | Tags:")
                         .font(.system(size: 12))
-                        .foregroundColor(.pink)
+                        .foregroundColor(.accentColor)
                         .fontWeight(.semibold)
                     
                     TagsView(entity: entity)

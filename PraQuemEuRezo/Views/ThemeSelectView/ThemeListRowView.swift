@@ -15,13 +15,13 @@ struct ThemeListRowView: View {
     
     var body: some View {
         Button {
-            
+
             onTap()
             
         } label: {
             HStack {
                 DefaultThemeView(theme: theme, fontSize: 20, fontWeight: isSelected ? .heavy : .regular, iconColor: isSelected ? .white : .accentColor)
-                    .foregroundColor(isSelected ? .white : .black)
+                    .foregroundColor(isSelected ? .white : .primary)
                 
                 Spacer()
                 

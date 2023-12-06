@@ -20,7 +20,7 @@ struct EntitySelectView: View {
         List {
             VStack {
                 if let theme = selectedTheme {
-                    DefaultThemeView(theme: theme, fontSize: 30, fontWeight: .regular, iconColor: .pink)
+                    DefaultThemeView(theme: theme, fontSize: 30, fontWeight: .regular, iconColor: .accentColor)
                 }
             }
             .frame(maxWidth: .infinity)

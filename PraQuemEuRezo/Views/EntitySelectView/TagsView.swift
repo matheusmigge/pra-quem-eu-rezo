@@ -9,8 +9,8 @@ import SwiftUI
 
 struct TagsView: View {
     
-    
     let entity: Entity
+    let color: Color = .accentColor
     
     var body: some View {
         
@@ -20,15 +20,14 @@ struct TagsView: View {
                 
                 ForEach(entity.tags, id: \.id) { theme in
                     
-                    DefaultThemeView(theme: theme, fontSize: 10, fontWeight: .bold, iconColor: .pink)
+                    DefaultThemeView(theme: theme, fontSize: 10, fontWeight: .bold, iconColor: color)
                         .padding(.horizontal, 8)
-                        .foregroundColor(.pink)
+                        .foregroundColor(.primary)
                         .cornerRadius(10)
                         .overlay {
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.pink, lineWidth: 1)
+                                .stroke(color, lineWidth: 1)
                                 .padding(.vertical, 1)
-                            
                         }
                 }
             }

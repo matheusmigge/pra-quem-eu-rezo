@@ -31,7 +31,7 @@ struct SymbolsView: View {
                             .font(.system(size: 9))
                             .fontWeight(.bold)
                             .frame(width: frameSize)
-                            .foregroundColor(.pink)
+                            .foregroundColor(.primary)
                     }
                 }
             }

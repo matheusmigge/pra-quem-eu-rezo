@@ -16,8 +16,9 @@ struct DefaultButtonView: View {
             .frame(maxWidth: .infinity, maxHeight: 60)
             .font(.headline)
             .foregroundStyle(.black)
-            .background(.yellow)
+            .background(Color("ExtraColor"))
             .cornerRadius(10)
+            .shadow(color: Color("ExtraColor").opacity(0.7), radius: 10, x: 0, y: 0)
     }
 }
 

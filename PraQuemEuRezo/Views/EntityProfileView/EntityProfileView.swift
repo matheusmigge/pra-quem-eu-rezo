@@ -15,12 +15,6 @@ struct EntityProfileView: View {
         
         self.entity = entity
 
-        //Use this if NavigationBarTitle is with Large Font
-        UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "Georgia", size: 50)!, .foregroundColor: UIColor.black]
-
-        //Use this if NavigationBarTitle is with displayMode = .inline
-//        UINavigationBar.appearance().titleTextAttributes = [.font : UIFont(name: "Helvetica Bold", size: 20)!, .foregroundColor: UIColor.black]
-
     }
     
     var body: some View {
@@ -32,7 +26,7 @@ struct EntityProfileView: View {
                     
                     Text("\(entity.group.name) | Tags:")
                         .font(.system(size: 12))
-                        .foregroundColor(.pink)
+                        .foregroundColor(.accentColor)
                         .fontWeight(.semibold)
                     
                     TagsView(entity: entity)
@@ -49,7 +43,7 @@ struct EntityProfileView: View {
                 
                 Text(entity.label)
                     .font(.system(size: 20))
-                    .foregroundColor(.pink)
+                    .foregroundColor(.accentColor)
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.leading)
                 
@@ -60,7 +54,7 @@ struct EntityProfileView: View {
                 VStack (alignment: .leading) {
                     Text("Símbolos de \(entity.name):")
                         .font(.system(size: 20))
-                        .foregroundColor(.pink)
+                        .foregroundColor(.accentColor)
                         .fontWeight(.semibold)
                     
                     SymbolsView(entity: entity)
@@ -69,7 +63,8 @@ struct EntityProfileView: View {
             }
         }
         .navigationBarTitle(entity.name)
-        .navigationBarTitleDisplayMode(.large)
+        .navigationBarTitleDisplayMode(.inline)
+        .padding(.top, -30)
     }
 }
 

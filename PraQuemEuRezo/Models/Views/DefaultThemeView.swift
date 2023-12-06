@@ -33,7 +33,7 @@ struct DefaultThemeView: View {
 struct DefaultThemeView_Previews: PreviewProvider {
     
     static var previews: some View {
-        DefaultThemeView(theme: MockObjects.themesMock[19], fontSize: 30, fontWeight: .regular, iconColor: .pink)
+        DefaultThemeView(theme: MockObjects.themesMock[19], fontSize: 30, fontWeight: .regular, iconColor: .accentColor)
             .frame(width: 350)
     }
 }

@@ -11,7 +11,7 @@ struct HomeScreenView: View {
     var body: some View {
         NavigationView {
             VStack {     
-                Image("app-logo")
+                Image("AppLogo")
                     .resizable()
                     .scaledToFit()
                 
@@ -21,7 +21,7 @@ struct HomeScreenView: View {
                     DefaultButtonView(text: "Entrar")
                 })
             }
-            .padding(30)
+            .padding(40)
             .navigationBarHidden(true)
         }
     }
@@ -30,5 +30,6 @@ struct HomeScreenView: View {
 struct HomeScreenView_Previews: PreviewProvider {
     static var previews: some View {
         HomeScreenView()
+            .preferredColorScheme(.dark)
     }
 }
