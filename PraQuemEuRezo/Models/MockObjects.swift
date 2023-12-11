@@ -38,7 +38,60 @@ struct MockObjects {
         Symbol(name: "Águia", image: "eagle"),
         Symbol(name: "Relâmpago", image: "lightning"),
         Symbol(name: "Cedro real", image: "sceptre"),
-
+        Symbol(name: "Abutre", image: "vulture"),
+        Symbol(name: "Animais selvagens", image: "wild-animals"),
+        Symbol(name: "Águia", image: "eagle"),
+        Symbol(name: "Burro", image: "donkey"),
+        Symbol(name: "Cachorro", image: "dog"),
+        Symbol(name: "Caduceu", image: "caduceus"),
+        Symbol(name: "Carneiro", image: "ram"),
+        Symbol(name: "Cavalo", image: "horse"),
+        Symbol(name: "Cão de guarda", image: "watch-dog"),
+        Symbol(name: "Cervo", image: "deer"),
+        Symbol(name: "Chapéu de viajante", image: "traveller's-hat"),
+        Symbol(name: "Chaleira", image: "kettle"),
+        Symbol(name: "Cigarra", image: "cicada"),
+        Symbol(name: "Cisne", image: "swan"),
+        Symbol(name: "Concha de vieira", image: "great-scallop"),
+        Symbol(name: "Coroa de louros", image: "laurel-wreath"),
+        Symbol(name: "Coroa de murta", image: "myrtle-wreath"),
+        Symbol(name: "Coruja", image: "owl"),
+        Symbol(name: "Corvo", image: "crow"),
+        Symbol(name: "Cornucopia", image: "cornucopia"),
+        Symbol(name: "Cetro real", image: "sceptre"),
+        Symbol(name: "Cuco", image: "cuckoo"),
+        Symbol(name: "Espigas de trigo", image: "wheat-spikes"),
+        Symbol(name: "Falcão", image: "hawk"),
+        Symbol(name: "Fogo do lar", image: "fireplace"),
+        Symbol(name: "Flores", image: "flowers"),
+        Symbol(name: "Golfinho", image: "dolphin"),
+        Symbol(name: "Garça", image: "heron"),
+        Symbol(name: "Javalí", image: "boar"),
+        Symbol(name: "Lança", image: "spear"),
+        Symbol(name: "Lira", image: "lyre"),
+        Symbol(name: "Oliveira", image: "olive-tree"),
+        Symbol(name: "Passeridae", image: "passeridae"),
+        Symbol(name: "Peixe", image: "fish"),
+        Symbol(name: "Pele de animais", image: "animal-skin"),
+        Symbol(name: "Peru real", image: "royal-turkey"),
+        Symbol(name: "Pomba", image: "dove"),
+        Symbol(name: "Porco", image: "pig"),
+        Symbol(name: "Raposa", image: "fox"),
+        Symbol(name: "Rato", image: "rat"),
+        Symbol(name: "Relâmpago", image: "lightning"),
+        Symbol(name: "Rosas", image: "roses"),
+        Symbol(name: "Sandálias aladas", image: "wiged-sandals"),
+        Symbol(name: "Serpente", image: "snake"),
+        Symbol(name: "Serpente alada", image: "winged-snake"),
+        Symbol(name: "Serpente venenosa", image: "venomous-snake"),
+        Symbol(name: "Tartaruga", image: "turtle"),
+        Symbol(name: "Tigre", image: "tiger"),
+        Symbol(name: "Touro", image: "bull"),
+        Symbol(name: "Tridente", image: "xxx"),
+        Symbol(name: "Urso", image: "bear"),
+        Symbol(name: "Vaca", image: "cow"),
+        Symbol(name: "Vara de loto", image: "lotus-rod"),
+        Symbol(name: "Viajante", image: "traveller")
     ]
     
     static let groupsMock: [Group] = [
@@ -47,10 +100,11 @@ struct MockObjects {
         Group(name: "Religiões de matriz africana"),
     ]
     
-    static let entitiesMock: [Entity] = [
+    static let entitiesMock: [Entity] =
+    [
         Entity(
             name: "Zeus",
-            label: "O rei dos deuses",
+            label: "O deus de todos os deuses",
             group: Group(name: "Mitologia greco-romana"),
             image: "zeus",
             description: "Rei e pai dos deuses, o governante do monte Olimpo e deus do céu, do tempo, dos trovões, dos relâmpagos, da lei, da ordem e da justiça. \n\nEra o filho menor de Cronos e Rea. Derrotou a seu pai Cronos e ganhou a soberania dos céus para si mesmo. Na arte, foi representado como um homem real, maduro com uma figura robusta e barba escura. Seus atributos habituais são o cetro real e o relâmpago, e seus animais sagrados são o águia e o touro. \n\nSeu homólogo romano Júpiter, também conhecido como Jove, era a deidade suprema dos romanos.",
@@ -61,10 +115,10 @@ struct MockObjects {
                 Theme(id: 4, name: "Justiça", icon: "building.columns.fill")
             ],
             symbols: [
-                Symbol(name: "Cedro real", image: "sceptre"),
-                Symbol(name: "Relâmpago", image: "lightning"),
+                Symbol(name: "Touro", image: "bull"),
                 Symbol(name: "Águia", image: "eagle"),
-                Symbol(name: "Touro", image: "bull")]),
+                Symbol(name: "Relâmpago", image: "lightning"),
+                Symbol(name: "Cedro real", image: "sceptre")]),
         Entity(
             name: "Atena",
             label: "O deusa da sabedoria",
@@ -80,8 +134,8 @@ struct MockObjects {
                 Theme(id: 14, name: "Artesanato", icon: "scissors"),
                 Theme(id: 15, name: "Sabedoria", icon: "books.vertical.fill")],
             symbols: [
-                Symbol(name: "Oliveira", image: ""),
-                Symbol(name: "Coruja", image: "")]),
+                Symbol(name: "Oliveira", image: "olive-tree"),
+                Symbol(name: "Coruja", image: "owl")]),
         Entity(
             name: "Afrodite",
             label: "A deusa do amor",
@@ -95,11 +149,11 @@ struct MockObjects {
                 Theme(id: 18, name: "Sexo", icon: "flame.fill"),
                 Theme(id: 19, name: "Prazer", icon: "sparkles")],
             symbols: [
-                Symbol(name: "Rosas", image: ""),
-                Symbol(name: "Flores", image: ""),
-                Symbol(name: "Concha de vieira", image: ""),
-                Symbol(name: "Coroa de murta", image: ""),
-                Symbol(name: "Pomba", image: ""),
-                Symbol(name: "Passeridae", image: "")])
+                Symbol(name: "Rosas", image: "roses"),
+                Symbol(name: "Flores", image: "flowers"),
+                Symbol(name: "Concha de vieira", image: "great-scallop"),
+                Symbol(name: "Coroa de murta", image: "myrtle-wreath"),
+                Symbol(name: "Pomba", image: "dove"),
+                Symbol(name: "Passeridae", image: "passeridae")])
     ]
 }

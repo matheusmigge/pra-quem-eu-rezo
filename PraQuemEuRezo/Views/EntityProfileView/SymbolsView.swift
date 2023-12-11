@@ -32,6 +32,7 @@ struct SymbolsView: View {
                             .fontWeight(.bold)
                             .frame(width: frameSize)
                             .foregroundColor(.primary)
+                            .multilineTextAlignment(.center)
                     }
                 }
             }

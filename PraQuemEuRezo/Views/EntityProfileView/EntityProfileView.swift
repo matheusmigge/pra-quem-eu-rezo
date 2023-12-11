@@ -39,7 +39,7 @@ struct EntityProfileView: View {
                         .frame(height: 200)
                         .cornerRadius(20)
                 }
-                .padding(.top, 10)
+                .padding(.top, 5)
                 
                 Text(entity.label)
                     .font(.system(size: 20))
@@ -71,7 +71,7 @@ struct EntityProfileView: View {
 struct EntityProfileView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            EntityProfileView(entity: MockObjects.entitiesMock[0])
+            EntityProfileView(entity: MockObjects.entitiesMock[2])
         }
     }
 }
