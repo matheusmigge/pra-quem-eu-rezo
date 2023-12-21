@@ -9,7 +9,7 @@ import Foundation
 
 struct Symbol: Identifiable {
     
-    let id = UUID()
+    let id: Int
     let name:  String
     let image: String
 }

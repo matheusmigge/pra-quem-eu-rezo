@@ -55,7 +55,7 @@ struct EntitySelectView: View {
 struct EntitySelectView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            EntitySelectView(selectedTheme: MockObjects.themesMock[0])
+            EntitySelectView(selectedTheme: MockObjects.themesMock[11])
         }
     }
 }
