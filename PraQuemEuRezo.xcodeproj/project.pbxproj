@@ -12,6 +12,7 @@
 		563DEA5C2AE938F6001938C7 /* EntityProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DEA5B2AE938F6001938C7 /* EntityProfileView.swift */; };
 		563DEA5E2AE93B55001938C7 /* SymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DEA5D2AE93B55001938C7 /* SymbolsView.swift */; };
 		563DEA602AE94164001938C7 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DEA5F2AE94164001938C7 /* Symbol.swift */; };
+		563E371F2B3611C200EC2583 /* AllSymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563E371E2B3611C200EC2583 /* AllSymbolsView.swift */; };
 		566C5E962AEB03C0001B3866 /* JustifiedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566C5E952AEB03C0001B3866 /* JustifiedTextView.swift */; };
 		566EA5E72AC5D61100688D08 /* PraQuemEuRezoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566EA5E62AC5D61100688D08 /* PraQuemEuRezoApp.swift */; };
 		566EA5E92AC5D61100688D08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566EA5E82AC5D61100688D08 /* ContentView.swift */; };
@@ -35,6 +36,7 @@
 		563DEA5B2AE938F6001938C7 /* EntityProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityProfileView.swift; sourceTree = "<group>"; };
 		563DEA5D2AE93B55001938C7 /* SymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsView.swift; sourceTree = "<group>"; };
 		563DEA5F2AE94164001938C7 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		563E371E2B3611C200EC2583 /* AllSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSymbolsView.swift; sourceTree = "<group>"; };
 		566C5E952AEB03C0001B3866 /* JustifiedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustifiedTextView.swift; sourceTree = "<group>"; };
 		566EA5E32AC5D61100688D08 /* PraQuemEuRezo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PraQuemEuRezo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		566EA5E62AC5D61100688D08 /* PraQuemEuRezoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraQuemEuRezoApp.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				563DEA5B2AE938F6001938C7 /* EntityProfileView.swift */,
 				563DEA5D2AE93B55001938C7 /* SymbolsView.swift */,
+				563E371E2B3611C200EC2583 /* AllSymbolsView.swift */,
 			);
 			path = EntityProfileView;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				568A2F5F2AE6A6C40069F686 /* EntityView.swift in Sources */,
 				563DEA5C2AE938F6001938C7 /* EntityProfileView.swift in Sources */,
 				56FDE6892AE7187500459630 /* Group.swift in Sources */,
+				563E371F2B3611C200EC2583 /* AllSymbolsView.swift in Sources */,
 				56BFA4752AE3662C00AEA8A1 /* ThemeSelectView.swift in Sources */,
 				563DEA602AE94164001938C7 /* Symbol.swift in Sources */,
 				566EA5E92AC5D61100688D08 /* ContentView.swift in Sources */,
@@ -397,6 +401,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PraQuemEuRezo/Preview Content\"";
+				DEVELOPMENT_TEAM = P9D4UX94KC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -425,6 +430,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PraQuemEuRezo/Preview Content\"";
+				DEVELOPMENT_TEAM = P9D4UX94KC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

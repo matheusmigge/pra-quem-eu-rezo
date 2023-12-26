@@ -71,7 +71,7 @@ struct EntityProfileView: View {
 struct EntityProfileView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            EntityProfileView(entity: MockObjects.entitiesMock[6])
+            EntityProfileView(entity: MockObjects.entitiesMock[0])
         }
     }
 }
